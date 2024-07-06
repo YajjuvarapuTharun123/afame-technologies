@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Churn Prediction</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        .container { max-width: 500px; margin: 0 auto; }
+        .input-group { margin-bottom: 15px; }
+        .input-group label { display: block; margin-bottom: 5px; }
+        .input-group input { width: 100%; padding: 8px; }
+        .button { text-align: center; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Customer Churn Prediction</h2>
+        <form action="/predict" method="post">
+            <div class="input-group">
+                <label for="CreditScore">Credit Score</label>
+                <input type="number" step="0.1" name="CreditScore" required>
+            </div>
+            <div class="input-group">
+                <label for="Geography">Geography</label>
+                <input type="number" step="0.1" name="Geography" required>
+            </div>
+            <div class="input-group">
+                <label for="Gender">Gender</label>
+                <input type="number" step="0.1" name="Gender" required>
+            </div>
+            <div class="input-group">
+                <label for="Age">Age</label>
+                <input type="number" step="0.1" name="Age" required>
+            </div>
+            <div class="input-group">
+                <label for="Tenure">Tenure</label>
+                <input type="number" step="0.1" name="Tenure" required>
+            </div>
+            <div class="input-group">
+                <label for="Balance">Balance</label>
+                <input type="number" step="0.1" name="Balance" required>
+            </div>
+            <div class="input-group">
+                <label for="NumOfProducts">Number of Products</label>
+                <input type="number" step="0.1" name="NumOfProducts" required>
+            </div>
+            <div class="input-group">
+                <label for="HasCrCard">Has Credit Card</label>
+                <input type="number" step="0.1" name="HasCrCard" required>
+            </div>
+            <div class="input-group">
+                <label for="IsActiveMember">Is Active Member</label>
+                <input type="number" step="0.1" name="IsActiveMember" required>
+            </div>
+            <div class="input-group">
+                <label for="EstimatedSalary">Estimated Salary</label>
+                <input type="number" step="0.1" name="EstimatedSalary" required>
+            </div>
+            <div class="button">
+                <button type="submit">Predict</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
